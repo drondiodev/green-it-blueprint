@@ -18,13 +18,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Leaf className="h-5 w-5 text-white" />
-            </div>
-            <div>
-              <div className="font-bold text-foreground text-lg">EcoPack</div>
-              <div className="text-xs text-muted-foreground">by ARIS</div>
+          <div className="flex items-center space-x-3">
+            <div className="flex items-center bg-gradient-primary rounded-xl px-3 py-2">
+              <Leaf className="h-5 w-5 text-white mr-2" />
+              <div className="text-white">
+                <div className="font-bold text-sm leading-tight">EcoPack</div>
+                <div className="text-xs opacity-90 leading-tight">by ARIS Informatique</div>
+              </div>
             </div>
           </div>
 
@@ -89,22 +89,6 @@ export default function Header() {
         )}
       </div>
 
-      {/* Trust banner */}
-      <div className="bg-gradient-primary py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-4 text-white text-sm">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              ✓ +200 entreprises accompagnées
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              ✓ Économies garanties jusqu'à 60%
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              ✓ Recyclage gratuit inclus
-            </Badge>
-          </div>
-        </div>
-      </div>
     </header>
   );
 }

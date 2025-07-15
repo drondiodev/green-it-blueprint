@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-sustainable-tech.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-primary">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -13,7 +13,7 @@ export default function HeroSection() {
           alt="Sustainable Technology" 
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-primary opacity-80"></div>
       </div>
 
       {/* Content */}
@@ -59,23 +59,9 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Video section */}
-        <div className="mb-8 animate-scale-in" style={{ animationDelay: "0.6s" }}>
-          <div className="relative inline-block">
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 max-w-lg mx-auto">
-              <div className="flex items-center justify-center mb-4">
-                <Play className="text-primary-light h-12 w-12 cursor-pointer hover:scale-110 transition-transform" />
-              </div>
-              <p className="text-white text-sm font-medium">
-                🎥 Comment nous aidons les petites structures à économiser 60% 
-                tout en respectant la planète (1 min)
-              </p>
-            </div>
-          </div>
-        </div>
 
         {/* CTA Button */}
-        <div className="animate-fade-in" style={{ animationDelay: "0.9s" }}>
+        <div className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <Button variant="hero" size="lg" className="text-lg px-8 py-4 mb-4">
             Je découvre ma solution personnalisée
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -86,7 +72,7 @@ export default function HeroSection() {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-gray-300 animate-fade-in" style={{ animationDelay: "1.2s" }}>
+        <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-gray-300 animate-fade-in" style={{ animationDelay: "0.9s" }}>
           <div className="flex items-center">
             <Star className="text-yellow-400 h-5 w-5 mr-1" />
             <span className="text-sm">+200 entreprises accompagnées</span>

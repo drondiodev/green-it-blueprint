@@ -94,21 +94,31 @@ export default function BenefitsSection() {
           ))}
         </div>
 
-        {/* Visual benefits illustration */}
-        <div className="relative">
-          <img 
-            src={benefitsImage} 
-            alt="Benefits visualization" 
-            className="w-full h-64 object-cover rounded-2xl shadow-soft"
-          />
-          <div className="absolute inset-0 bg-gradient-primary/20 rounded-2xl flex items-center justify-center">
-            <div className="text-center text-white">
-              <h3 className="text-2xl font-bold mb-2">
-                Performance + Économies + Écologie
-              </h3>
-              <p className="text-lg">
-                La triple promesse ARIS EcoPack
-              </p>
+        {/* Modern performance highlight card */}
+        <div className="relative bg-gradient-primary rounded-2xl p-8 shadow-strong">
+          <div className="text-center text-white">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-6">
+              <TrendingUp className="h-8 w-8" />
+            </div>
+            <h3 className="text-3xl font-bold mb-4">
+              Performance + Économies + Écologie
+            </h3>
+            <p className="text-xl opacity-90 mb-6">
+              La triple promesse ARIS EcoPack
+            </p>
+            <div className="grid grid-cols-3 gap-6 max-w-md mx-auto">
+              <div className="text-center">
+                <div className="text-2xl font-bold mb-1">60%</div>
+                <div className="text-sm opacity-80">Économies</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold mb-1">100%</div>
+                <div className="text-sm opacity-80">Performance</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold mb-1">-80%</div>
+                <div className="text-sm opacity-80">Impact CO₂</div>
+              </div>
             </div>
           </div>
         </div>
