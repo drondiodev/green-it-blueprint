@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-sustainable-tech.jpg";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-primary">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -13,7 +13,7 @@ export default function HeroSection() {
           alt="Sustainable Technology" 
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-primary opacity-80"></div>
+        <div className="absolute inset-0 bg-slate-900/80"></div>
       </div>
 
       {/* Content */}

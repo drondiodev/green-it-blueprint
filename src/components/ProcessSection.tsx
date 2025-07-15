@@ -40,10 +40,11 @@ export default function ProcessSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Animated connection lines */}
-          <div className="hidden md:block absolute top-20 left-1/2 transform -translate-x-1/2 w-full h-0.5 bg-gradient-to-r from-success via-primary to-success opacity-40 z-0 animate-pulse"></div>
-          <div className="hidden md:flex absolute top-[75px] left-1/3 transform -translate-x-1/2 w-6 h-6 bg-success rounded-full animate-ping opacity-30 z-0" style={{ animationDelay: "0s" }}></div>
-          <div className="hidden md:flex absolute top-[75px] left-2/3 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full animate-ping opacity-30 z-0" style={{ animationDelay: "1s" }}></div>
+          {/* Connection lines with arrows */}
+          <div className="hidden md:block absolute top-20 left-[25%] w-[25%] h-0.5 bg-success z-0"></div>
+          <div className="hidden md:block absolute top-20 right-[25%] w-[25%] h-0.5 bg-success z-0"></div>
+          <div className="hidden md:block absolute top-[75px] left-[41.5%] w-4 h-4 border-t-2 border-r-2 border-success transform rotate-45 z-0"></div>
+          <div className="hidden md:block absolute top-[75px] right-[41.5%] w-4 h-4 border-t-2 border-r-2 border-success transform rotate-45 z-0"></div>
           
           {steps.map((step, index) => (
             <Card key={index} className="relative z-10 hover:shadow-strong transition-all duration-300 border-success/20 bg-white hover:border-success/40">
