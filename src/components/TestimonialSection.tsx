@@ -102,13 +102,15 @@ export default function TestimonialSection() {
           <h3 className="text-xl font-semibold text-foreground mb-8">
             Nos partenaires et certifications
           </h3>
-           <div className="flex flex-wrap justify-center gap-6">
-            {partners.map((partner, index) => (
-              <div key={index} className="flex items-center bg-card border border-border rounded-lg px-6 py-4 shadow-soft hover:shadow-strong transition-all duration-300">
-                <img src={partner.logo} alt={`${partner.name} logo`} className="h-8 w-8 mr-3 object-contain" />
-                <span className="font-semibold text-foreground">{partner.name}</span>
-              </div>
-            ))}
+          <div className="relative overflow-hidden">
+            <div className="flex gap-8 animate-scroll">
+              {[...partners, ...partners].map((partner, index) => (
+                <div key={index} className="flex items-center bg-card border border-border rounded-lg px-6 py-4 shadow-soft hover:shadow-strong transition-all duration-300 whitespace-nowrap flex-shrink-0">
+                  <img src={partner.logo} alt={`${partner.name} logo`} className="h-8 w-8 mr-3 object-contain" />
+                  <span className="font-semibold text-foreground">{partner.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -20,9 +20,9 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Pre-headline */}
         <div className="mb-8 animate-fade-in">
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            👉 Pour TPE, PME et collectivités engagées dans une démarche écoresponsable
-          </p>
+          <div className="inline-flex items-center bg-gradient-success rounded-full px-6 py-3 shadow-soft border border-success/20">
+            <span className="text-white font-semibold">👉 Pour TPE, PME et collectivités engagées dans une démarche écoresponsable</span>
+          </div>
         </div>
 
         {/* Main headline */}

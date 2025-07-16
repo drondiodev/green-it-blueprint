@@ -43,10 +43,14 @@ export default function Header() {
 
           {/* CTA Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center text-sm text-muted-foreground">
-              <Phone className="h-4 w-4 mr-1" />
-              <span>Appel gratuit</span>
-            </div>
+            <a 
+              href="https://aris-informatique.fr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-destructive hover:bg-destructive/90 text-destructive-foreground px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-md"
+            >
+              Visitez ARIS Informatique
+            </a>
             <Button variant="hero" size="sm">
               Demander un devis
             </Button>
