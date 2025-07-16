@@ -19,18 +19,18 @@ export default function TestimonialSection() {
   ];
 
   const partners = [
-    "Microsoft Partner",
-    "Écosystème IT Français", 
-    "AFNOR Certifié",
-    "ECOSYSTEM Agréé"
+    { name: "Microsoft", logo: "🏢" },
+    { name: "Memsoft", logo: "🔧" }, 
+    { name: "pfSense", logo: "🛡️" },
+    { name: "AFNOR", logo: "✅" }
   ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-secondary/30 to-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">
-            Preuves sociales & Effet Halo
+          <Badge variant="default" className="mb-4 text-base font-bold px-6 py-3 bg-gradient-primary text-white shadow-glow">
+            Preuves sociales
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Ils nous font confiance
@@ -92,22 +92,6 @@ export default function TestimonialSection() {
           </CardContent>
         </Card>
 
-        {/* Track record */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <Card className="text-center p-8 bg-gradient-success">
-            <CardContent className="p-0">
-              <div className="text-4xl font-bold text-white mb-2">+200</div>
-              <div className="text-white/90">entreprises accompagnées</div>
-            </CardContent>
-          </Card>
-          
-          <Card className="text-center p-8 bg-gradient-primary">
-            <CardContent className="p-0">
-              <div className="text-4xl font-bold text-white mb-2">8 500€</div>
-              <div className="text-white/90">économisés/an en moyenne</div>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Partners */}
         <div className="text-center">
@@ -116,9 +100,10 @@ export default function TestimonialSection() {
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
             {partners.map((partner, index) => (
-              <Badge key={index} variant="outline" className="px-4 py-2 text-sm">
-                {partner}
-              </Badge>
+              <div key={index} className="flex items-center bg-card border border-border rounded-lg px-6 py-4 shadow-soft hover:shadow-strong transition-all duration-300">
+                <span className="text-2xl mr-3">{partner.logo}</span>
+                <span className="font-semibold text-foreground">{partner.name}</span>
+              </div>
             ))}
           </div>
         </div>
