@@ -127,7 +127,7 @@ export default function ServicesSection() {
                   ))}
                 </ul>
                 
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors hover:animate-pulse">
                   Demander un devis
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

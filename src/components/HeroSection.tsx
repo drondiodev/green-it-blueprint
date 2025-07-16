@@ -19,13 +19,10 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Pre-headline */}
-        <div className="flex justify-center gap-4 mb-8 animate-fade-in">
-          <Badge variant="default" className="text-base font-bold px-6 py-3 bg-gradient-primary text-white shadow-glow">
-            Parcours sans ambiguïté
-          </Badge>
-          <Badge variant="success" className="text-base font-bold px-6 py-3 bg-gradient-success text-white shadow-glow">
-            Méthode ARIS
-          </Badge>
+        <div className="mb-8 animate-fade-in">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            👉 Pour TPE, PME et collectivités engagées dans une démarche écoresponsable
+          </p>
         </div>
 
         {/* Main headline */}

@@ -2,6 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Quote } from "lucide-react";
 import testimonialImage from "@/assets/testimonial-julie.jpg";
+import microsoftLogo from "@/assets/partners/microsoft-logo.svg";
+import threeCxLogo from "@/assets/partners/3cx-logo.png";
+import pfsenseLogo from "@/assets/partners/pfsense-logo.svg";
+import afnorLogo from "@/assets/partners/afnor-logo.svg";
 
 export default function TestimonialSection() {
   const testimonials = [
@@ -19,10 +23,10 @@ export default function TestimonialSection() {
   ];
 
   const partners = [
-    { name: "Microsoft", logo: "🏢" },
-    { name: "Memsoft", logo: "🔧" }, 
-    { name: "pfSense", logo: "🛡️" },
-    { name: "AFNOR", logo: "✅" }
+    { name: "Microsoft", logo: microsoftLogo },
+    { name: "3CX", logo: threeCxLogo }, 
+    { name: "pfSense", logo: pfsenseLogo },
+    { name: "AFNOR", logo: afnorLogo }
   ];
 
   return (
@@ -98,10 +102,10 @@ export default function TestimonialSection() {
           <h3 className="text-xl font-semibold text-foreground mb-8">
             Nos partenaires et certifications
           </h3>
-          <div className="flex flex-wrap justify-center gap-6">
+           <div className="flex flex-wrap justify-center gap-6">
             {partners.map((partner, index) => (
               <div key={index} className="flex items-center bg-card border border-border rounded-lg px-6 py-4 shadow-soft hover:shadow-strong transition-all duration-300">
-                <span className="text-2xl mr-3">{partner.logo}</span>
+                <img src={partner.logo} alt={`${partner.name} logo`} className="h-8 w-8 mr-3 object-contain" />
                 <span className="font-semibold text-foreground">{partner.name}</span>
               </div>
             ))}
