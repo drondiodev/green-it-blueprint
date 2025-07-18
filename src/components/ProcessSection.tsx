@@ -44,6 +44,9 @@ export default function ProcessSection() {
           {steps.map((step, index) => (
             <Card key={index} className="relative z-10 hover:shadow-strong transition-all duration-300 border-success/20 bg-white hover:border-success/40">
               <CardContent className="p-8 text-center">
+                <Badge variant="outline" className="absolute top-4 left-4 bg-primary text-white border-primary">
+                  Étape {index + 1}
+                </Badge>
                 <div className="relative mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-success to-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <step.icon className="h-8 w-8 text-white" />
