@@ -9,8 +9,7 @@ export default function Header() {
   const navItems = [
     { label: "Nos engagements", href: "#engagements" },
     { label: "Nos produits", href: "#produits" },
-    { label: "Nos clients", href: "#clients" },
-    { label: "Contact", href: "#contact" }
+    { label: "Nos cas clients", href: "#clients" }
   ];
 
   return (
@@ -22,7 +21,7 @@ export default function Header() {
             <div className="flex items-center bg-gradient-primary rounded-xl px-3 py-2">
               <Leaf className="h-5 w-5 text-white mr-2" />
               <div className="text-white">
-                <div className="font-bold text-sm leading-tight">EcoPack</div>
+                <div className="font-bold text-sm leading-tight">EcoPack®</div>
                 <div className="text-xs opacity-90 leading-tight">by ARIS Informatique</div>
               </div>
             </div>
@@ -47,9 +46,9 @@ export default function Header() {
               href="https://aris-informatique.fr" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-destructive hover:bg-destructive/90 text-destructive-foreground px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-md"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-md"
             >
-              Visitez ARIS Informatique
+              Visitez ARIS
             </a>
             <Button variant="hero" size="sm">
               Demander un devis

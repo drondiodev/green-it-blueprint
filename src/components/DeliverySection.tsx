@@ -8,17 +8,17 @@ export default function DeliverySection() {
     {
       icon: Truck,
       title: "Livraison",
-      description: "Directement chez vous"
+      description: "Préparation en atelier et livraison chez vous"
     },
     {
       icon: Settings,
       title: "Installation", 
-      description: "Configuration complète"
+      description: "Accompagnement de proximité et support réactif"
     },
     {
       icon: Recycle,
       title: "Recyclage",
-      description: "Récupération gratuite"
+      description: "Récupération de votre ancien matériel"
     }
   ];
 
@@ -53,10 +53,6 @@ export default function DeliverySection() {
         </div>
 
         <div className="text-center mb-12">
-          <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-            On prépare tout, on installe si besoin, et on récupère gratuitement votre ancien parc pour le recycler.
-          </p>
-          
           <div className="inline-flex items-center bg-gradient-success rounded-full px-6 py-3 shadow-soft border border-success/20 mb-8">
             <span className="text-white font-semibold">Zéro déchet, zéro friction.</span>
           </div>
