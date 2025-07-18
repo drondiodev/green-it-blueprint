@@ -12,8 +12,8 @@ export default function FAQSection() {
       answer: "La Méthode ARIS est une approche unique qui combine matériel reconditionné, logiciels open source et souveraineté numérique pour offrir des solutions informatiques économiques et écologiques. Elle permet aux entreprises de réduire leurs coûts IT jusqu'à 60% tout en s'engageant dans une démarche écoresponsable."
     },
     {
-      question: "Comment EcoPack fonctionne-t-il ?",
-      answer: "EcoPack évalue vos besoins informatiques, propose des équipements reconditionnés de qualité professionnelle, installe des logiciels open source adaptés à votre activité, et assure la formation de vos équipes. Nous garantissons un service complet avec maintenance et support technique inclus."
+      question: "Comment EcoPack® fonctionne-t-il ?",
+      answer: "EcoPack® évalue vos besoins informatiques, propose des équipements reconditionnés de qualité professionnelle, installe des logiciels open source adaptés à votre activité, et assure la formation de vos équipes. Nous garantissons un service complet avec maintenance et support technique inclus."
     },
     {
       question: "Mes données sont-elles sécurisées ?",
@@ -28,8 +28,8 @@ export default function FAQSection() {
       answer: "Nous proposons un audit gratuit de votre infrastructure actuelle avec une estimation personnalisée des économies possibles. Cet audit inclut une démonstration des solutions proposées et un plan de migration détaillé sans engagement."
     },
     {
-      question: "Comment EcoPack me fait-il gagner du temps ?",
-      answer: "EcoPack simplifie votre gestion IT en proposant des solutions intégrées, un support technique réactif, et une maintenance préventive. Plus besoin de gérer multiple fournisseurs : nous nous occupons de tout, de l'installation au support quotidien."
+      question: "Comment EcoPack® me fait-il gagner du temps ?",
+      answer: "EcoPack® simplifie votre gestion IT en proposant des solutions intégrées, un support technique réactif, et une maintenance préventive. Plus besoin de gérer multiple fournisseurs : nous nous occupons de tout, de l'installation au support quotidien."
     }
   ];
 
@@ -41,7 +41,7 @@ export default function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Réponses aux questions communes à propos d'EcoPack et de ses fonctionnalités. 
+            Réponses aux questions communes à propos d'EcoPack® et de ses fonctionnalités. 
             Si vous avez d'autres questions, n'hésitez pas à nous contacter.
           </p>
         </div>

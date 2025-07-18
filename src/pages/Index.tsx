@@ -15,10 +15,10 @@ const Index = () => {
       <Header />
       <main className="pt-20"> {/* Account for fixed header */}
         <HeroSection />
+        <ServicesSection />
         <ProcessSection />
         <BenefitsSection />
         <DeliverySection />
-        <ServicesSection />
         <TestimonialSection />
         <FAQSection />
         <ContactSection />

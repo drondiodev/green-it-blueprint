@@ -78,7 +78,7 @@ export default function ServicesSection() {
             Méthode ARIS - Nos solutions
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Optimisez votre infrastructure IT avec des solutions 
+            Faites évoluer votre infrastructure IT avec des solutions 
             <span className="text-primary"> fiables</span>,
             <span className="text-success"> économiques</span> et
             <span className="text-accent-blue"> durables</span>

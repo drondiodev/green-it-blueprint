@@ -57,10 +57,10 @@ export default function BenefitsSection() {
             Bénéfices clés
           </h2>
           <h3 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-6">
-            Les avantages d'ARIS EcoPack
+            Les avantages d'ARIS EcoPack®
           </h3>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Avec EcoPack, bénéficiez d'une prestation informatique complète et qualitative qui allie{" "}
+            Avec EcoPack®, bénéficiez d'une prestation informatique complète et qualitative qui allie{" "}
             <strong className="text-primary">performance</strong>,{" "}
             <strong className="text-success">économies</strong> et{" "}
             <strong className="text-accent-blue">respect de l'environnement</strong>.
@@ -104,7 +104,7 @@ export default function BenefitsSection() {
               Performance + Économies + Écologie
             </h3>
             <p className="text-xl opacity-90 mb-6">
-              La triple promesse ARIS EcoPack
+              La triple promesse ARIS EcoPack®
             </p>
             <div className="grid grid-cols-3 gap-6 max-w-md mx-auto">
               <div className="text-center">

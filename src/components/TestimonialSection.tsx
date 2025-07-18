@@ -15,7 +15,7 @@ export default function TestimonialSection() {
       company: "Cabinet comptable Moreau & Associés",
       size: "TPE, 6 personnes",
       image: testimonialImage,
-      quote: "Grâce à EcoPack, nous avons réduit nos dépenses IT de 52% en un trimestre.",
+      quote: "Grâce à EcoPack®, nous avons réduit nos dépenses IT de 52% en un trimestre.",
       details: "Nous avons remplacé tout notre parc informatique par du matériel reconditionné ARIS. La qualité est au rendez-vous et les économies sont réelles.",
       savings: "52%",
       rating: 5

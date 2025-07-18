@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Send, Mail, Phone, MapPin } from "lucide-react";
 
 export default function ContactSection() {
@@ -13,7 +15,9 @@ export default function ContactSection() {
     email: "",
     company: "",
     phone: "",
-    message: ""
+    product: "",
+    message: "",
+    acceptPolicy: false
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -26,6 +30,20 @@ export default function ContactSection() {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSelectChange = (value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      product: value
+    }));
+  };
+
+  const handleCheckboxChange = (checked: boolean) => {
+    setFormData(prev => ({
+      ...prev,
+      acceptPolicy: checked
     }));
   };
 
@@ -84,27 +102,46 @@ export default function ContactSection() {
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="company">Entreprise</Label>
+                    <Label htmlFor="company">Entreprise *</Label>
                     <Input
                       id="company"
                       name="company"
                       placeholder="Nom de votre entreprise"
                       value={formData.company}
                       onChange={handleChange}
+                      required
                       className="border-border focus:border-primary"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Téléphone</Label>
+                    <Label htmlFor="phone">Téléphone *</Label>
                     <Input
                       id="phone"
                       name="phone"
                       placeholder="01 23 45 67 89"
                       value={formData.phone}
                       onChange={handleChange}
+                      required
                       className="border-border focus:border-primary"
                     />
                   </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="product">Type de produit recherché *</Label>
+                  <Select onValueChange={handleSelectChange} required>
+                    <SelectTrigger className="border-border focus:border-primary">
+                      <SelectValue placeholder="Sélectionnez un type de produit" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="postes-serveurs">Postes et serveurs</SelectItem>
+                      <SelectItem value="toners-imprimantes">Toners et imprimantes</SelectItem>
+                      <SelectItem value="reseaux-securite">Réseaux et sécurité</SelectItem>
+                      <SelectItem value="logiciels-licences">Logiciels et licences</SelectItem>
+                      <SelectItem value="maintenance-support">Maintenance et support</SelectItem>
+                      <SelectItem value="audit-conseil">Audit et conseil</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 <div className="space-y-2">
@@ -121,10 +158,23 @@ export default function ContactSection() {
                   />
                 </div>
 
+                <div className="flex items-center space-x-2">
+                  <Checkbox 
+                    id="acceptPolicy" 
+                    checked={formData.acceptPolicy}
+                    onCheckedChange={handleCheckboxChange}
+                    required
+                  />
+                  <Label htmlFor="acceptPolicy" className="text-sm">
+                    J'accepte la <a href="#" className="text-primary underline">politique de confidentialité</a> et le traitement de mes données personnelles *
+                  </Label>
+                </div>
+
                 <Button 
                   type="submit" 
                   className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300"
                   size="lg"
+                  disabled={!formData.acceptPolicy}
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Envoyer ma demande

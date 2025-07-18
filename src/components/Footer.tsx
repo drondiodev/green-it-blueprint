@@ -15,7 +15,7 @@ export default function Footer() {
                 <Leaf className="h-5 w-5 text-white" />
               </div>
               <div>
-                <div className="font-bold text-lg">EcoPack</div>
+                <div className="font-bold text-lg">EcoPack®</div>
                 <div className="text-xs text-white/70">by ARIS Informatique</div>
               </div>
             </div>
