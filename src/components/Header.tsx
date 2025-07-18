@@ -48,7 +48,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:shadow-md"
             >
-              Visitez ARIS
+              Vers ARIS Informatique
             </a>
             <Button variant="hero" size="sm">
               Demander un devis

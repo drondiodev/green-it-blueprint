@@ -26,8 +26,8 @@ export default function DeliverySection() {
     <section className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">
-            Service complet
+          <Badge variant="outline" className="mb-4 bg-gradient-to-r from-primary/10 to-success/10 text-primary border-primary/30 hover:border-primary/50 px-4 py-2">
+            Un accompagnement complet, simple et responsable
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Pas de jargon. Juste vos objectifs.
@@ -44,7 +44,7 @@ export default function DeliverySection() {
                 <h3 className="text-xl font-semibold text-foreground mb-2">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground whitespace-nowrap">
                   {service.description}
                 </p>
               </CardContent>
