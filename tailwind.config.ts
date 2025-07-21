@@ -144,6 +144,20 @@ export default {
 					'100%': {
 						transform: 'translateX(-50%)'
 					}
+				},
+				'buttonheartbeat': {
+					'0%': {
+						'box-shadow': '0 0 0 0 hsl(var(--primary))',
+						transform: 'scale(1)',
+					},
+					'50%': {
+						'box-shadow': '0 0 0 7px hsl(var(--primary) / 0)',
+						transform: 'scale(1.05)',
+					},
+					'100%': {
+						'box-shadow': '0 0 0 0 hsl(var(--primary) / 0)',
+						transform: 'scale(1)',
+					},
 				}
 			},
 			animation: {
@@ -152,7 +166,8 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
 				'slide-up': 'slide-up 0.8s ease-out',
-				'scroll': 'scroll 20s linear infinite'
+				'scroll': 'scroll 20s linear infinite',
+				'buttonheartbeat': 'buttonheartbeat 2s infinite ease-in-out'
 			}
 		}
 	},

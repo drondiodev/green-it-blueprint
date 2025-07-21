@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Leaf, Phone } from "lucide-react";
 import { useState } from "react";
+import LineTabsNavigation from "./LineTabsNavigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,16 +29,8 @@ export default function Header() {
           </div>
 
           {/* Navigation Desktop */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
-              >
-                {item.label}
-              </a>
-            ))}
+          <nav className="hidden md:flex items-center">
+            <LineTabsNavigation items={navItems} />
           </nav>
 
           {/* CTA Desktop */}
@@ -50,7 +43,7 @@ export default function Header() {
             >
               Vers ARIS Informatique
             </a>
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="animate-buttonheartbeat">
               Demander un devis
             </Button>
           </div>
@@ -83,7 +76,7 @@ export default function Header() {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button variant="hero" size="sm" className="w-full">
+                <Button variant="hero" size="sm" className="w-full animate-buttonheartbeat">
                   Demander un devis
                 </Button>
               </div>

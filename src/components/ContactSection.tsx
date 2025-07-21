@@ -185,25 +185,25 @@ export default function ContactSection() {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <Card className="p-8 bg-gradient-success text-white">
+            <Card className="p-8 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold mb-4">Pourquoi nous choisir ?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Audit gratuit et sans engagement</span>
+                    <span>Une entreprise qui vous connait</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Réponse sous 24h garantie</span>
+                    <span>Un accompagnement à visage humain</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Accompagnement personnalisé</span>
+                    <span>Un service sur mesure</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Solutions 100% françaises</span>
+                    <span>Des choix technologiques guidés par l'économie et l'éthique</span>
                   </li>
                 </ul>
               </CardContent>
